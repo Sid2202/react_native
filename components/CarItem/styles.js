@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 
 const styles = StyleSheet.create({
@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     car_container: {
 
         width: '100%',
-        height: '100%',
+        height: Dimensions.get('screen').height,
         
       },
     
@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
       title: {
     
         fontSize: 40,
+        color: '#dfe6e9',
         fontWeight: '100',
     
       },
@@ -39,6 +40,17 @@ const styles = StyleSheet.create({
         // contain
         position: 'absolute',
       },
+
+      buttonContainer: {
+        position: 'absolute',
+        bottom: 50,
+        width: '100%',
+      },
+
+      subtitleCTA: {
+        textDecorationLine: 'underline',
+        
+      }
     
 });
 
